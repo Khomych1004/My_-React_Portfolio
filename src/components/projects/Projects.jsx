@@ -1,9 +1,9 @@
 import React from "react";
-import "./projects.css";
+//import "./projects.css";
 
 const Projects = () => {
     return (
-        <div>Projects</div>
+        <h1>Projects</h1>
     )
 }
 
