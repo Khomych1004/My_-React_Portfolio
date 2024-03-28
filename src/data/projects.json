@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "imgsource": "https://avatars.dzeninfra.ru/get-zen_doc/1703615/pub_5eb13b66583b5267023f8ea0_5eb13c53e5df9626aacceb0a/scale_1200",
+        "imgalt": "Weather for five days",
+        "projectname": "Weather for five days",
+        "h1": "Weather for five days",
+        "description": "Teamtree is a Node.js command-line application designed to streamline the process of generating a cohesive HTML webpage containing essential information about the members of a software engineering team. As a manager, you can utilise Teamtree to quickly access and display basic information such as emails and GitHub profiles for each team member.",
+        "repo": "https://github.com/Khomych1004/weather_for_five_days",
+        "demo": "https://khomych1004.github.io/weather_for_five_days/",
+        "p1": "five day weather forecast."
+
+    }
+]
