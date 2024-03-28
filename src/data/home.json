@@ -1,6 +1,6 @@
 [
     {
-        "id": "home",
+        "id": 0,
         "my_foto": "https://github.com/Khomych1004/My_React_Portfolio/blob/main/src/assets/images/home/Foto.jpg",
         "img_alt": "Oleksandr Khomych",
         "full_name": "Oleksandr Khomych",
