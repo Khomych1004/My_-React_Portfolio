@@ -6,6 +6,7 @@ import Home from './components/home/Home.jsx';
 import Projects from './components/projects/Projects.jsx';
 import Project from './components/project/Project.jsx';
 import Contact from './components/contact/Contact.jsx';
+import Footer from './components/footer/Footer.jsx';
 //import Resume from './components/resume/Resume';
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         {/* <Route path="/Resume" element={<Resume />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
