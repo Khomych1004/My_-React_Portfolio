@@ -1,5 +1,6 @@
 import React from 'react';
 import homeData from '../../data/home.json'
+import foto from '../../assets/images/home/Foto.jpg'
 
 const Home = () => {
     return (
@@ -8,7 +9,7 @@ const Home = () => {
             {homeData.map((data) => (
                 <div className="row" key={"home"} style={{ alignItems: 'center' }}>
                     <div className="col-md-3" style={{ textAlign: 'center' }}>
-                        <img src={data.my_foto} className="img-fluid" style={{ borderRadius: '10%' }} alt={data.img_alt} />
+                        <img src={foto} className="img-fluid" style={{ borderRadius: '10%' }} alt={data.img_alt} />
                         <h3>{data.full_name}</h3>
                     </div>
                     <div className="col-md-9" style={{ textAlign: 'justify' }}>
