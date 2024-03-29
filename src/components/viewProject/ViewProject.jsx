@@ -1,12 +1,18 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-//import "./projects.css";
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import projectsData from '../../assets/data/projects.json'
+//import { Link } from 'react-router-dom';
+//import './project.css';
 
-//import im from '../../assets/images/projects/Weather_For_Five_Days.png'
+const Project = () => {
 
-const Projects = () => {
+    const { id } = useParams();
+    console.log(id)
+    const project = projectsData.find(project => project.id == id)
+
+console.log(project.h1)
     return (
+        
         <div className="container">
             <h3 className="text-center">My Projects</h3>
             <div className="container" style={{
@@ -15,23 +21,23 @@ const Projects = () => {
                 flexWrap: 'wrap'
             }}>
 
-                {projectsData.map((project) => (
+              
                   
-                    <div key={project.id} className="card" style={{ width: '18rem', marginTop: '20px' }}>
+                    <div key={project.id} className="card" style={{ width: '40rem', marginTop: '20px' }}>
                         <img src={project.imgsource} className="card-img-top" alt={project.imgalt} />
                         <div className="card-body">
                             <h5 className="card-title">{project.h1}</h5>
                             <p className="card-text">{project.p1}</p>
-                            <Link to={`/Projects/${project.id}`} className="btn btn-primary">Open</Link>
+                           
                         </div>
                     </div>
-                ))}
+               
 
 
 
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Projects;
+export default Project;
